@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:text="제목 : "/>
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+            <TextView
+                android:id="@+id/titleRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:text="순위 : "/>
+
+            <TextView
+                android:id="@+id/movieRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/titleRank"
+                app:layout_constraintBottom_toBottomOf="@+id/titleRank"
+                app:layout_constraintStart_toEndOf="@+id/titleRank"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+            <TextView
+                android:id="@+id/titleSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleRank"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:text="누적수입 : "/>
+
+            <TextView
+                android:id="@+id/movieSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/titleSales"
+                app:layout_constraintBottom_toBottomOf="@+id/titleSales"
+                app:layout_constraintStart_toEndOf="@+id/titleSales"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+            <TextView
+                android:id="@+id/titleAudi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleSales"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:text="누적관객 : "/>
+
+            <TextView
+                android:id="@+id/movieAudi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/titleAudi"
+                app:layout_constraintBottom_toBottomOf="@+id/titleAudi"
+                app:layout_constraintStart_toEndOf="@+id/titleAudi"
+                android:textSize="16sp"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
