@@ -19,5 +19,5 @@
 - 이후 src/java/main 위치에 디펜던시.kt 파일 생성 후 object로 각 의존성의 버전 등 관리
 ### 2. UI 상태 관리
 1) LiveData 안쓰고 StateFlow 쓴다고 함
-2) 예전처럼 Ui 각각의 상태를 LiveData로 만들어서 싹다 구독(Observe)하는 방식이 아닌 연관된 것들끼리 UiState 등의 형태로 모델링
+2) 예전처럼 데이터 타입 각각의 상태를 LiveData로 만들어서 일일히 구독(Observe)하는 방식이 아닌 연관된 것(Component or Widget 단위?)들끼리 UiState 등의 형태로 모델링
 3) Enum대신 sealed class, sealed interface 등으로 상태를 만들고 각 상태에 맞게 UI 랜더링
